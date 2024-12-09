@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site web</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7fafc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height:100vh;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0.1rem;
+            flex-shrink: 0;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            gap: 1rem;
+            margin: 2rem auto;
+            height: 100%;
+            margin-top: 1rem;
+            padding-bottom: 3rem;
+        }
+        section {
+            background-color: #edf2f7;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            margin-bottom: 0;
+            width: 100%;
+            flex: 1 1 440%
+        }
+        aside {
+            background-color: #8caac6;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+            box-sizing: border-box;
+            padding-top: 3.5rem;
+        }
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 100;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: Playfair Display;
+        }
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            font-weight: 100;
+            margin: 0;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h3-1{
+            position: absolute;
+            font-size: 1.9rem;
+            color: #5a5a5a;
+            left: 0.5rem;
+            top: 7.5rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h3-2{
+            position: absolute;
+            font-size: 1.9rem;
+            color: #5a5a5a;
+            right:10rem;
+            top:7.5rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        img {
+            padding: 0;
+            padding-left: 0%;
+            margin-top: 0;
+            width: 350px;
+        }
+        p {
+            flex-grow:1;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            font-family: Playfair Display;
+            text-align: center;
+            font-weight: 100;
+            font-size: large;
+            padding: 0.5rem;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+
+        }
+        @media (max-width: 1165px) {
+            main {
+                flex-direction: column;
+            }
+            aside{
+                flex-direction: row-reverse;
+                padding-top: 4rem;
+            }
+            h3-1{
+                top:8rem;
+                left:1rem;
+            }
+            h3-2{
+                top:48.2rem;
+                left: 1rem;
+            }
+            section{
+                flex-direction: column;
+                width: 100%;
+            }
+            img {
+                margin-left: 1rem;
+                margin-top: 5;
+                width: 200px;
+            }
+        }
+        @media (max-width: 1092px){
+            h3-2{
+                top: 49rem;
+            }
+        }
+        @media (max-width: 1027px) {
+            h3-2{
+                top: 50rem;
+            }
+        }
+        @media (max-width: 978px) {
+            h3-2{
+                top:51.5rem;
+            }
+        }
+        @media (max-width: 917px) {
+            h3-2{
+                top:52.5rem;
+            }
+        }
+        @media (max-width: 900px) {
+            img{
+                width: 180px;
+                height: 200px;
+            }
+            h3-2{
+                top: 56.5rem;
+            }
+        }
+        @media (max-width: 883px) {
+            h3-2{
+                top:58rem;
+            }
+        }
+        @media (max-width: 845px) {
+            h3-2{
+                top:59rem;
+            }
+        }
+        @media (max-width: 805px) {
+            h3-2{
+                top:60rem;
+            }
+        }
+        @media (max-width: 770px) {
+            h3-2{
+                top:61.5rem;
+            }
+        }
+        @media (max-width:736px){
+            h3-2{
+                top:63rem;
+            }
+        }
+        @media (max-width: 714px) {
+            body{
+                width: 714px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon site web</h1>
+    </header>
+    <main>
+        <h3-1>Titre Secondaire</h3-1>
+        <aside>
+            <img alt="Une personne versant du café" src="WS_YYC_737_MAX_1.jpg" />
+            <p>Le Boeing 737 Max est la quatrième génération de la famille d'avions 737. Construit depuis 2015 par Boeing Commercial Airplanes, cette génération est basée sur le 737 Next Generation qu'elle doit remplacer.
+                Le 737 Max se différencie principalement du 737 NG par l'implantation de plus gros moteurs CFM International LEAP-1B et par d'autres modifications aérodynamiques concernant la cellule et les ailettes distinctives..
+            </p>
+        </aside>
+        <section>
+            <h2>Titre Primaire</h2>
+            <p>Un avion est un aérodyne (un aéronef plus lourd que l'air), entraîné par un propulseur, dont la portance aérodynamique est obtenue par des surfaces fixes. Lorsque la portance est obtenue (à l'arrêt ou en mouvement) par des surfaces en rotation, l'appareil est alors dit à « voilure tournante » (hélicoptère, autogire, girodyne).
+            Un avion équipé d'un dispositif lui permettant de décoller et de se poser sur l'eau (amerrir) est un hydravion. D'autres accessoires permettent l'atterrissage et le décollage sur des surfaces enneigées comme des skis situés sous les roues de l'avion.
+            Le mot « aviation » (du latin « avis », qui signifie « oiseau »1, et du suffixe « atio ») a été employé pour la première fois par Gabriel de La Landelle, en 1863, dans le livre Aviation ou navigation aérienne sans ballon, un ouvrage rendant compte des tentatives d'envol de Jean-Marie Le Bris dans un appareil plus lourd que l'air.
+            Le substantif masculin2,3,4 « avion » est un dérivé savant du latin avisc. Il est attesté au XIXe siècle2 : d'après le Trésor de la langue française informatisé3, il a peut-être été créé en 1875 mais sa plus ancienne occurrence connue se trouve dans le brevet no BB 205 155, déposé le 19 avril 1890 par Clément Ader5 et relatif à « un appareil ailé pour la navigation aérienne dénommé Avion »6. C'est ainsi qu'Ader a appelé l'appareil baptisé Éole, avec lequel il décolle le 9 octobre 1890 puis rase le sol sur 50 mètres à 20 cm au-dessus de la piste. Cet événement ne sera toutefois pas homologué comme étant un vol : la hauteur atteinte était insuffisante pour le qualifier de tel.
+            Le troisième prototype de Clément Ader, l'Avion III, effectue un vol de trois cents mètres devant un comité militaire le 14 octobre 1897 à Satory7. Une autre raison à la non-homologation des vols de Clément Ader est que ces vols étaient soumis au secret militaire.
+            À la même époque Otto Lilienthal, grâce à des prototypes qui étaient réalisés à partir de structures de bambou entoilées de coton, pouvait planer jusqu'à 400 mètres en se lançant du haut d'une colline haute d'environ vingt mètres. Le contrôle de la machine se faisait par des déplacements du corps comme pour les deltaplanes pendulaires contemporains.
+            </p>
+        </section>
+        <h3-2>Titre Secondaire</h3-2>
+        <aside>
+            <img alt="Une tasse de café avec un design" src="390px-Aircraft_Chicago;Aero27G6.jpg" />
+            <p>Le premier tour du monde aérien remonte à 1924. Effectué par quatre aviateurs issus de l'Air Service, ancêtre de l’US Air Force, le voyage s’étend sur 175 jours, et couvre près de 42 400 km. L'équipe s'est globalement déplacée d'est en ouest, quittant les côtes du Pacifique nord pour l’Asie du Sud avant de gagner l’Europe et de revenir aux États-Unis.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>auteur: Louis-Philippe Boucher</p>
+    </footer>
+</body>
+</html>
